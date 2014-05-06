@@ -32,6 +32,10 @@
 (setq whitespace-line-column 80)
 (setq whitespace-style '(empty face tabs lines-tail trailing))
 
+;; Ido
+(ido-mode t)
+(flx-ido-mode t)
+
 ;; Kill old buffers
 (require 'midnight)
 

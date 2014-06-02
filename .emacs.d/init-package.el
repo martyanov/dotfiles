@@ -31,6 +31,7 @@
     lua-mode
     midnight
     monokai-theme
+    racket-mode
     rainbow-delimiters
     rainbow-mode
     smartparens

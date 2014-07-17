@@ -29,6 +29,7 @@
     ido-ubiquitous
     jinja2-mode
     lua-mode
+    magit
     midnight
     monokai-theme
     racket-mode

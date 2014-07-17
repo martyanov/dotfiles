@@ -32,6 +32,7 @@
     magit
     midnight
     monokai-theme
+    projectile
     racket-mode
     rainbow-delimiters
     rainbow-mode

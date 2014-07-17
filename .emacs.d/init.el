@@ -46,4 +46,7 @@
 (global-flycheck-mode t)
 (diminish 'flycheck-mode)
 
+;; Projectile mode
+(projectile-global-mode)
+
 ;;; init.el ends here

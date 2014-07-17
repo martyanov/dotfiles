@@ -46,6 +46,9 @@
 (global-flycheck-mode t)
 (diminish 'flycheck-mode)
 
+;; Enable magit
+(require 'magit)
+
 ;; Projectile mode
 (projectile-global-mode)
 

@@ -45,6 +45,8 @@
 ;; Add melpa package repository and initialize package database
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 ;; Store package cache in ~/.emacs.d/elpa

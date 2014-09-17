@@ -28,9 +28,10 @@
 (diminish 'undo-tree-mode)
 
 ;; Whitespace mode configuration
+(require 'whitespace)
 (global-whitespace-mode t)
 (setq whitespace-line-column 80)
-(setq whitespace-style '(empty face tabs lines-tail trailing))
+(setq whitespace-style '(empty face tabs tab-mark trailing lines-tail))
 
 ;; Ido
 (ido-mode t)

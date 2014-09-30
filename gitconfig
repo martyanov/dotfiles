@@ -1,0 +1,33 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+
+[gc]
+	auto=1
+
+[merge]
+	summary=true
+
+[alias]
+	unstage = reset HEAD
+	uncommit = reset --soft HEAD^
+
+[user]
+	name = Andrey Martyanov
+	email = andrey@martyanov.com
+
+[pull]
+        default = simple
+
+[push]
+	default = simple
+
+[core]
+	editor = emacs
+	excludesfile = ~/.gitignore_global
+
+[credential]
+	helper = cache --timeout=3600

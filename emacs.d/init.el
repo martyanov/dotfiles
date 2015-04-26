@@ -9,6 +9,7 @@
 (add-to-list 'load-path "~/.emacs.d/modules/")
 
 ;; Core requirements
+(require 'init-keys)
 (require 'init-package)
 (require 'init-ui)
 

@@ -12,4 +12,9 @@
 (global-set-key (kbd "<C-x-left>")   'buf-move-left)
 (global-set-key (kbd "<C-x-right>")  'buf-move-right)
 
+;; Smex keybindings
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+
+(provide 'init-keys)
 ;;; init-keys.el ends here

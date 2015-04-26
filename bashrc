@@ -27,10 +27,8 @@ if [ -f $HOME/.powerline/powerline/bindings/bash/powerline.sh ]; then
 fi
 
 # Go
-export GOPATH=$HOME/usr/go
-export GOROOT=$HOME/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
 
 # OPAM
 . /home/andrey/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

@@ -6,7 +6,7 @@
 
 ;;; Code:
 
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/modules/")
 
 ;; Core requirements
 (require 'init-package)

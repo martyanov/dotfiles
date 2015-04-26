@@ -55,4 +55,8 @@
 ;; Projectile mode
 (projectile-global-mode)
 
+;; Configure Smex
+(setq smex-save-file "~/.emacs.d/.smex-items")
+(setq smex-history-length 10)
+
 ;;; init.el ends here

@@ -11,9 +11,11 @@ export PATH=$PATH:$HOME/.local/bin
 export TERM=xterm-256color
 
 # Python
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.6
-    . /usr/local/bin/virtualenvwrapper.sh
+export PYTHONDONTWRITEBYTECODE=1
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+else
+    echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
 # Powerline

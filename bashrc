@@ -24,12 +24,12 @@ if [ -f $HOME/.powerline/powerline/bindings/bash/powerline.sh ]; then
     powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
-    . $HOME/.powerline/powerline/bindings/bash/powerline.sh
+    source $HOME/.powerline/powerline/bindings/bash/powerline.sh
 fi
 
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# OPAM
-. /home/andrey/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+# OCaml
+source $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

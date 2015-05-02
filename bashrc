@@ -12,6 +12,7 @@ export TERM=xterm-256color
 
 # Python
 export PYTHONDONTWRITEBYTECODE=1
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 else

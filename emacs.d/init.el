@@ -12,6 +12,7 @@
 (require 'init-keys)
 (require 'init-package)
 (require 'init-ui)
+(require 'init-go)
 
 ;; General settings
 (setq backup-directory-alist `((".*" . "/tmp/")))
@@ -58,11 +59,5 @@
 ;; Configure Smex
 (setq smex-save-file "~/.emacs.d/.smex-items")
 (setq smex-history-length 10)
-
-;; Go mode
-(require 'go-mode)
-;; Use goimports instead of go-fmt
-(setq gofmt-command "goimports")
-(add-hook 'before-save-hook 'gofmt-before-save)
 
 ;;; init.el ends here

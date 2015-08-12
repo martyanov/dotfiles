@@ -60,4 +60,7 @@
 (setq smex-save-file "~/.emacs.d/.smex-items")
 (setq smex-history-length 10)
 
+;; Configure GitGutter
+(global-git-gutter-mode +1)
+
 ;;; init.el ends here

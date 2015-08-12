@@ -24,6 +24,7 @@
     flx
     flx-ido
     flycheck
+    git-gutter
     go-mode
     haskell-mode
     ido-ubiquitous

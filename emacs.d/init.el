@@ -24,6 +24,7 @@
 (global-auto-revert-mode t)
 (delete-selection-mode t)
 (global-hl-line-mode t)
+(setq require-final-newline t)
 
 ;; Undo tree mode
 (global-undo-tree-mode t)

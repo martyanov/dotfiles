@@ -15,8 +15,9 @@
 (require 'init-clojure)
 (require 'init-go)
 
-;; General settings
-(setq backup-directory-alist `((".*" . "/tmp/")))
+;; Completely disable backups
+(setq make-backup-files nil)
+(setq backup-inhibited t)
 (setq auto-save-default nil)
 
 ;; Editor settings

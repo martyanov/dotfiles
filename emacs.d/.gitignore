@@ -1,4 +1,5 @@
 *.elc
+.cider-repl-history
 .smex-items
 auto-save-list
 elpa

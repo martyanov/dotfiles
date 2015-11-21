@@ -12,6 +12,7 @@
 (require 'init-keys)
 (require 'init-package)
 (require 'init-ui)
+(require 'init-clojure)
 (require 'init-go)
 
 ;; General settings

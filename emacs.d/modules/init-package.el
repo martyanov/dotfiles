@@ -14,6 +14,9 @@
     ace-jump-buffer
     ack-and-a-half
     browse-kill-ring
+    cider
+    clojure-mode
+    clojure-mode-extra-font-locking
     ctags-update
     dash
     diminish
@@ -33,6 +36,7 @@
     magit
     midnight
     monokai-theme
+    paredit
     projectile
     racket-mode
     rainbow-delimiters
@@ -42,6 +46,10 @@
     undo-tree
     yaml-mode
     yasnippet))
+
+;; Pin packages to use particular repository
+(add-to-list 'package-pinned-packages
+             '(cider . "melpa-stable") t)
 
 ;; Add melpa package repository and initialize package database
 (add-to-list 'package-archives

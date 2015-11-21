@@ -16,5 +16,8 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
+;; Replace buffer-menu with ibuffer
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
 (provide 'init-keys)
 ;;; init-keys.el ends here

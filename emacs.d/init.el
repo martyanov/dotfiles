@@ -36,7 +36,7 @@
 (require 'whitespace)
 (global-whitespace-mode t)
 (setq whitespace-line-column 80)
-(setq whitespace-style '(empty face tabs tab-mark trailing lines-tail))
+(setq whitespace-style '(face trailing tabs empty tab-mark))
 
 ;; Ido
 (ido-mode t)

@@ -10,6 +10,9 @@
 
 (add-hook 'go-mode-hook
           (lambda()
+            ;; Tab idents are legal in Go, so don't highlight them
+            (setq whitespace-style '(face trailing empty))
+
             ;; Use goimports instead of gofmt if available
             (when (executable-find "goimports")
               (setq gofmt-command "goimports"))

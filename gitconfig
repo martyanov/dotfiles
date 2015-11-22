@@ -1,33 +1,43 @@
+[alias]
+        amend = commit --amend --reuse-message=HEAD
+        branches = branch -a
+        d = diff
+        dc = diff --cached
+        l = log --pretty=format:'%C(red)%h%C(reset) %C(yellow)%an: %C(reset)%s %C(green)(%cr)' --graph --date=relative
+        ln = log --pretty=format:'%C(red)%h%C(reset) %C(yellow)%an: %C(reset)%s %C(green)(%cr)' --graph --date=relative -n 10
+        remotes = remote -v
+        st = status -s
+        tags = tag -l
+        uncommit = reset --soft HEAD^
+        unstage = reset HEAD
+
+[core]
+        editor = emacs
+        excludesfile = ~/.gitignore_global
+
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
-	ui = auto
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+        ui = auto
+
+[credential]
+        helper = cache --timeout=3600
 
 [gc]
-	auto=1
+        auto=1
 
 [merge]
-	summary=true
-
-[alias]
-	unstage = reset HEAD
-	uncommit = reset --soft HEAD^
-
-[user]
-	name = Andrey Martyanov
-	email = andrey@martyanov.com
+        summary=true
 
 [pull]
         default = simple
+        rebase = true
 
 [push]
-	default = simple
+        default = simple
 
-[core]
-	editor = emacs
-	excludesfile = ~/.gitignore_global
-
-[credential]
-	helper = cache --timeout=3600
+[user]
+        name = Andrey Martyanov
+        email = andrey@martyanov.com

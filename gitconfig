@@ -25,11 +25,14 @@
 [credential]
         helper = cache --timeout=3600
 
+[fetch]
+        prune = true
+
 [gc]
-        auto=1
+        auto = 1
 
 [merge]
-        summary=true
+        summary = true
 
 [pull]
         default = simple

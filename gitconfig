@@ -1,4 +1,6 @@
 [alias]
+        a = add
+        ap = add -p
         amend = commit --amend --reuse-message=HEAD
         branches = branch -a
         d = diff

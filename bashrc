@@ -33,3 +33,8 @@ export PATH=$PATH:$GOPATH/bin
 
 # OCaml
 source $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+# Generate random password
+genpw () {
+    gpg -a --gen-rand 1 9
+}

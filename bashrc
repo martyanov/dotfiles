@@ -1,40 +1,34 @@
-# Aliases
-alias rmpyc='find . -name "*.pyc" -exec rm -rf {} \;'
-alias E="SUDO_EDITOR=\"emacsclient -t\" sudoedit"
-alias e='emacsclient -t'
-alias ec='emacsclient -c'
+# Source custom scripts
+for script_path in "$HOME/.bash/"{aliases,exports,functions}".sh"; do
+    if [ -f "$script_path" ]; then
+        echo "$script_path"
+    fi
+done
 
-# Local executable path
-export PATH=$PATH:$HOME/.local/bin
+# Enable tab completion
+if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+    . "$(brew --prefix)/etc/bash_completion"
+fi
 
-# Pretty terminal
-export TERM=xterm-256color
+# Activate generic colorizer
+if [ -f "$(brew --prefix)/etc/grc.bashrc" ]; then
+    . "$(brew --prefix)/etc/grc.bashrc"
+fi
 
-# Python
-export PYTHONDONTWRITEBYTECODE=1
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
+# Powerline
+if [ -f "$HOME/.powerline/powerline/bindings/bash/powerline.sh" ]; then
+    powerline-daemon -q
+    . "$HOME/.powerline/powerline/bindings/bash/powerline.sh"
+fi
+
+# Activate virtualenvwrapper
+if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
+    . "/usr/local/bin/virtualenvwrapper.sh"
 else
     echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
-# Powerline
-if [ -f $HOME/.powerline/powerline/bindings/bash/powerline.sh ]; then
-    powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-    source $HOME/.powerline/powerline/bindings/bash/powerline.sh
+# Opam
+if [ -f "$HOME/.opam/opam-init/init.sh" ]; then
+   . "$HOME/.opam/opam-init/init.sh"
 fi
-
-# Go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-# OCaml
-source $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-# Generate random password
-genpw () {
-    gpg -a --gen-rand 1 9
-}

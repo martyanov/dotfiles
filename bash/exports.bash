@@ -13,7 +13,8 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # History
 shopt -s histappend
-export HISTSIZE=10000
+export HISTSIZE=65535
+export HISTFILESIZE=65535
 export HISTCONTROL=ignoredups
 
 # Powerline

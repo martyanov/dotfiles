@@ -11,6 +11,11 @@ export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# History
+shopt -s histappend
+export HISTSIZE=10000
+export HISTCONTROL=ignoredups
+
 # Powerline
 export POWERLINE_BASH_CONTINUATION=1
 export POWERLINE_BASH_SELECT=1

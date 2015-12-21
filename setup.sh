@@ -128,6 +128,7 @@ cask_packages=(
     sublime-text3
     telegram
     the-unarchiver
+    ukelele
     utorrent
     vagrant
     vagrant-manager

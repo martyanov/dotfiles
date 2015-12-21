@@ -111,6 +111,7 @@ cask_packages=(
     google-hangouts
     handbrake
     iterm2
+    java
     keyboard-cleaner
     limechat
     lunchy

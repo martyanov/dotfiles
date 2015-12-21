@@ -105,6 +105,7 @@ cask_packages=(
     consul
     dropbox
     firefox
+    font-inconsolata-for-powerline
     ghc
     google-chrome
     google-hangouts
@@ -175,6 +176,7 @@ install_packages() {
     print_info "Installing and upgrading packages..."
 
     brew tap caskroom/cask
+    brew tap caskroom/fonts
     brew tap caskroom/versions
     brew update
     brew upgrade

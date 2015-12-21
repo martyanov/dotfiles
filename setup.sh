@@ -174,7 +174,7 @@ install_osx_deps() {
     print_success "All dependencies are installed."
 }
 
-install_packages() {
+install_osx_packages() {
     print_info "Installing and upgrading packages..."
 
     brew tap caskroom/cask
@@ -193,7 +193,7 @@ install_packages() {
 
 if [ "$(uname -s)" == "Darwin" ]; then
     install_osx_deps
-    install_packages
+    install_osx_packages
 else
     print_error "Currently only OS X is supported. :("
 fi

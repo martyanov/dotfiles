@@ -101,7 +101,6 @@ brew_packages=(
 cask_packages=(
     alfred
     appcleaner
-    awareness
     consul
     dropbox
     firefox

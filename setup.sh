@@ -111,6 +111,7 @@ cask_packages=(
     handbrake
     iterm2
     java
+    karabiner
     keyboard-cleaner
     limechat
     lunchy

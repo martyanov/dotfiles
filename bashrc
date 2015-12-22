@@ -1,7 +1,7 @@
 # Source custom scripts
 for script_path in "$HOME/.bash/"{aliases,exports,functions}".bash"; do
     if [ -f "$script_path" ]; then
-        echo "$script_path"
+        . "$script_path"
     fi
 done
 

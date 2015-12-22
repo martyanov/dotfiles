@@ -3,6 +3,10 @@
 # Set architecture flags
 export ARCHFLAGS="-arch x86_64"
 
+# Set locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Setup general executable file paths
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 

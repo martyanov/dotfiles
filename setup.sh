@@ -19,7 +19,6 @@ brew_packages=(
     cloc
     cmake
     colordiff
-    curl
     dos2unix
     erlang
     fasd
@@ -33,7 +32,6 @@ brew_packages=(
     gnutls
     go
     grc
-    hadoop
     haskell-stack
     heroku-toolbelt
     htop-osx
@@ -50,6 +48,7 @@ brew_packages=(
     libtiff
     libtool
     libyaml
+    lnav
     lua
     md5sha1sum
     mercurial
@@ -70,6 +69,7 @@ brew_packages=(
     psgrep
     pstree
     pv
+    pypy
     python
     python3
     readline
@@ -106,7 +106,6 @@ cask_packages=(
     font-inconsolata-for-powerline
     ghc
     google-chrome
-    google-hangouts
     handbrake
     iterm2
     java

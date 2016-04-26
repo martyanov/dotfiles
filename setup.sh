@@ -3,7 +3,6 @@
 set -e
 
 brew_packages=(
-    ack
     ansible
     aspell
     autoconf

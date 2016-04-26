@@ -12,7 +12,7 @@
 (defvar default-packages
   '(ace-jump-mode
     ace-jump-buffer
-    ack-and-a-half
+    ag
     browse-kill-ring
     cider
     clojure-mode

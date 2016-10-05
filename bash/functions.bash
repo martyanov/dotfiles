@@ -14,5 +14,5 @@ lst() {
 
 # Generate random password
 genpw() {
-    gpg -a --gen-rand 1 9
+    gpg -a --gen-rand 2 24
 }

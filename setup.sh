@@ -19,6 +19,8 @@ brew_packages=(
     cloc
     cmake
     colordiff
+    diff-so-fancy
+    dnsmasq
     dos2unix
     erlang
     fasd
@@ -28,6 +30,7 @@ brew_packages=(
     git
     git-extras
     gmp
+    gnu-sed
     gnupg
     gnutls
     go
@@ -37,7 +40,6 @@ brew_packages=(
     htop-osx
     httpie
     hub
-    influxdb
     jpeg
     leiningen
     libevent
@@ -68,6 +70,7 @@ brew_packages=(
     protobuf
     psgrep
     pstree
+    psutils
     pv
     pypy
     python
@@ -100,6 +103,7 @@ brew_packages=(
 cask_packages=(
     alfred
     appcleaner
+    charles
     consul
     dropbox
     firefox
@@ -126,8 +130,8 @@ cask_packages=(
     sublime-text3
     telegram
     the-unarchiver
+    transmission
     ukelele
-    utorrent
     vagrant
     vagrant-manager
     virtualbox

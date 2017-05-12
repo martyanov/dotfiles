@@ -13,6 +13,7 @@
   '(ace-jump-mode
     ace-jump-buffer
     ag
+    auto-virtualenv
     browse-kill-ring
     cider
     clojure-mode
@@ -38,6 +39,7 @@
     monokai-theme
     paredit
     projectile
+    pyvenv
     racket-mode
     rainbow-delimiters
     rainbow-mode

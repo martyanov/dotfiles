@@ -66,4 +66,7 @@
 ;; Configure GitGutter
 (global-git-gutter-mode +1)
 
+;; Python3 by default
+(setq python-shell-interpreter "python3")
+
 ;;; init.el ends here

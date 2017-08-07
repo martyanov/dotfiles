@@ -32,3 +32,6 @@ fi
 if [ -f "$HOME/.opam/opam-init/init.sh" ]; then
    . "$HOME/.opam/opam-init/init.sh"
 fi
+
+# Set correct terminal
+export TERM=screen-256color

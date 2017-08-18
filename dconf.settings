@@ -11,7 +11,7 @@ sleep-inactive-battery-timeout=1800
 [org/gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 night-light-schedule-to=10.0
-night-light-schedule-from=19.0
+night-light-schedule-from=21.0
 night-light-enabled=true
 night-light-temperature=uint32 5000
 

@@ -24,6 +24,10 @@
         status = auto
         ui = auto
 
+[diff]
+	algorithm = patience
+	indentheuristic = true
+
 [credential]
         helper = cache --timeout=3600
 

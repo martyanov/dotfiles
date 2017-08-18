@@ -17,6 +17,7 @@ python3_packages=(
     bpython
     flake8
     httpie
+    saws
     virtualenv
     virtualenvwrapper
     youtube-dl

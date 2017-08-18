@@ -2,13 +2,12 @@
 
 set -e
 
+# Currently just for information
 external_packages=(
     deadbeef
     dropbox
     jdk
     racket
-    skype
-    slack
     sublime-text3
     telegram
 )
@@ -20,12 +19,13 @@ python3_packages=(
     flake8
     httpie
     virtualenv
-    virtualenv-wrapper
+    virtualenvwrapper
     youtube-dl
 )
 
-dnf_packages=(
+fedora_packages=(
     ShellCheck
+    VirtualBox
     ansible
     aspell
     aspell-en
@@ -34,8 +34,11 @@ dnf_packages=(
     chromium
     cloc
     colordiff
+    dconf-editor
+    diffstat
     dnsmasq
     dnsmasq-utils
+    doxygen
     emacs
     erlang
     fabric
@@ -43,6 +46,8 @@ dnf_packages=(
     gettext
     git
     git-extras
+    gnome-shell-extension-topicons-plus
+    gnome-tweak-tool
     gnutls
     golang
     haskell-platform
@@ -52,162 +57,30 @@ dnf_packages=(
     libyaml-devel
     lnav
     lua
+    manedit
+    meld
+    mercurial
     mpv
     mtr
+    patch
+    patchutils
     powerline
     powerline-fonts
     psutils
     pv
     python3-devel
     rust
+    scanmem
     sloccount
     sqlite
+    systemtap
     the_silver_searcher
     tig
     tmux
     transmission
     tree
     vagrant
-    virtualbox
     wget
-)
-
-
-brew_packages=(
-    ansible
-    aspell
-    autoconf
-    autojump
-    automake
-    avro-tools
-    awscli
-    bash
-    bash-completion
-    binutils
-    boost
-    bsdmake
-    chicken
-    cloc
-    cmake
-    colordiff
-    diff-so-fancy
-    dnsmasq
-    dos2unix
-    erlang
-    fasd
-    findutils
-    gdbm
-    gettext
-    git
-    git-extras
-    gmp
-    gnu-sed
-    gnupg
-    gnutls
-    go
-    grc
-    haskell-stack
-    heroku-toolbelt
-    htop-osx
-    httpie
-    hub
-    jpeg
-    leiningen
-    libevent
-    libgit2
-    libpng
-    libssh2
-    libtasn1
-    libtiff
-    libtool
-    libyaml
-    lnav
-    lua
-    md5sha1sum
-    mercurial
-    moreutils
-    mtr
-    multimarkdown
-    nanomsg
-    nettle
-    nginx
-    openssl
-    ossp-uuid
-    pandoc
-    pcre
-    pkg-config
-    postgresql
-    proctools
-    protobuf
-    psgrep
-    pstree
-    psutils
-    pv
-    pypy
-    python
-    python3
-    readline
-    reattach-to-user-namespace
-    redis
-    rename
-    rust
-    shellcheck
-    sloccount
-    sqlite
-    ssh-copy-id
-    the_platinum_searcher
-    the_silver_searcher
-    thrift
-    tig
-    tmux
-    tree
-    unixodbc
-    watch
-    wget
-    wrk
-    wxmac
-    xz
-    youtube-dl
-    emacs --with-gnutls --with-cocoa --with-ctags
-)
-
-cask_packages=(
-    alfred
-    appcleaner
-    charles
-    consul
-    dropbox
-    firefox
-    font-inconsolata-for-powerline
-    ghc
-    google-chrome
-    handbrake
-    iterm2
-    java
-    karabiner
-    keyboard-cleaner
-    limechat
-    lunchy
-    qlcolorcode
-    qlmarkdown
-    qlprettypatch
-    qlstephen
-    quicklook-csv
-    quicklook-json
-    racket
-    seil
-    skype
-    slack
-    sublime-text3
-    telegram
-    the-unarchiver
-    transmission
-    ukelele
-    vagrant
-    vagrant-manager
-    virtualbox
-    vlc
-    vox
 )
 
 print_info() {
@@ -222,51 +95,29 @@ print_error() {
     printf "\e[0;31m[ERROR] %s\e[0m\n" "$1"
 }
 
-install_osx_deps() {
-    print_info "Checking and installing OS X deps..."
-
-    sudo softwareupdate -iva
-
-    if [[ ! -x /usr/bin/gcc ]]; then
-        print_info "Installing OS X Command Line Tools..."
-        xcode-select --install
-    fi
-
-    if [[ ! -x /usr/local/bin/brew ]]; then
-        print_info "Installing Brew..."
-        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    fi
-
-    export PATH=/usr/local/bin:$PATH
-
-    if [[ ! -x /usr/local/bin/ansible ]]; then
-        print_info "Installing Ansible..."
-        brew install ansible
-    fi
-
-    print_success "All dependencies are installed."
+install_system_deps() {
+    print_info "Installing system dependencies and updates..."
+    sudo dnf upgrade -y
+    print_success "All system dependencies and updates are installed."
 }
 
-install_osx_packages() {
-    print_info "Installing and upgrading packages..."
-
-    brew tap caskroom/cask
-    brew tap caskroom/fonts
-    brew tap caskroom/versions
-    brew update
-    brew upgrade
-    brew install "${brew_packages[@]}"
-    brew linkapps
-    brew cleanup
-    brew cask install "${cask_packages[@]}"
-    brew cask cleanup
-
-    print_success "All packages are installed."
+install_fedora_packages() {
+    print_info "Installing Fedora packages..."
+    sudo dnf group install -y --with-optional "C Development Tools and Libraries"
+    sudo dnf install -y "${fedora_packages[@]}"
+    print_success "All Fedora packages are installed."
 }
 
-if [ "$(uname -s)" == "Darwin" ]; then
-    install_osx_deps
-    install_osx_packages
+install_python3_packages() {
+    print_info "Installing Python 3 packages..."
+    pip3 install --user --upgrade "${python3_packages[@]}"
+    print_success "All Python 3 packages are installed."
+}
+
+if [[ -f "/etc/redhat-release" ]] && grep -q "Fedora" "/etc/redhat-release"; then
+    install_system_deps
+    install_fedora_packages
+    install_python3_packages
 else
-    print_error "Currently only OS X is supported. :("
+    print_error "Currently only Fedora is supported. :("
 fi

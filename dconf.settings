@@ -1,0 +1,64 @@
+[system/locale]
+region='en_US.UTF-8'
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=false
+sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=1800
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+night-light-schedule-to=10.0
+night-light-schedule-from=19.0
+night-light-enabled=true
+night-light-temperature=uint32 5000
+
+[org/gnome/settings-daemon/plugins/xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <1>}
+antialiasing='rgba'
+hinting='slight'
+
+[org/gnome/shell]
+enabled-extensions=['background-logo@fedorahosted.org', 'TopIcons@phocean.net']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'telegramdesktop.desktop', 'chromium-browser.desktop']
+had-bluetooth-devices-setup=true
+
+[org/gnome/shell/extensions/topicons]
+tray-pos='right'
+
+[org/gnome/desktop/interface]
+clock-show-date=true
+gtk-im-module='gtk-im-context-simple'
+clock-show-seconds=true
+enable-animations=false
+gtk-theme='Adwaita'
+toolkit-accessibility=false
+
+[org/gnome/desktop/peripherals/touchpad]
+send-events='disabled'
+
+[org/gnome/desktop/peripherals/mouse]
+speed=0.59999999999999998
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/privacy]
+report-technical-problems=false
+remember-recent-files=false
+
+[org/gnome/desktop/datetime]
+automatic-timezone=false
+
+[org/gnome/desktop/input-sources]
+show-all-sources=false
+xkb-options=@as []
+per-window=true
+current=uint32 0
+mru-sources=[('xkb', 'us'), ('xkb', 'ru')]
+sources=[('xkb', 'us'), ('xkb', 'ru')]
+
+[org/gnome/system/location]
+enabled=false

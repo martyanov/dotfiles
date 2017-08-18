@@ -51,6 +51,7 @@ fedora_packages=(
     golang
     haskell-platform
     htop
+    jq
     libpng-devel
     libtiff-devel
     libyaml-devel
@@ -61,6 +62,7 @@ fedora_packages=(
     mercurial
     mpv
     mtr
+    ncdu
     patch
     patchutils
     powerline

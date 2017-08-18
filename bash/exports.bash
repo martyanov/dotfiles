@@ -21,10 +21,6 @@ export HISTSIZE=65535
 export HISTFILESIZE=65535
 export HISTCONTROL=ignoredups
 
-# Powerline
-export POWERLINE_BASH_CONTINUATION=1
-export POWERLINE_BASH_SELECT=1
-
 # Go
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"

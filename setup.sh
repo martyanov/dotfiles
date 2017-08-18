@@ -2,6 +2,77 @@
 
 set -e
 
+external_packages=(
+    deadbeef
+    dropbox
+    jdk
+    racket
+    skype
+    slack
+    sublime-text3
+    telegram
+)
+
+
+python3_packages=(
+    awscli
+    bpython
+    flake8
+    httpie
+    virtualenv
+    virtualenv-wrapper
+    youtube-dl
+)
+
+dnf_packages=(
+    ShellCheck
+    ansible
+    aspell
+    aspell-en
+    autojump
+    chicken
+    chromium
+    cloc
+    colordiff
+    dnsmasq
+    dnsmasq-utils
+    emacs
+    erlang
+    fabric
+    fasd
+    gettext
+    git
+    git-extras
+    gnutls
+    golang
+    haskell-platform
+    htop
+    libpng-devel
+    libtiff-devel
+    libyaml-devel
+    lnav
+    lua
+    mpv
+    mtr
+    powerline
+    powerline-fonts
+    psutils
+    pv
+    python3-devel
+    rust
+    sloccount
+    sqlite
+    the_silver_searcher
+    tig
+    tmux
+    transmission
+    tree
+    vagrant
+    virtualbox
+    wget
+)
+
+
 brew_packages=(
     ansible
     aspell

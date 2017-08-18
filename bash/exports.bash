@@ -35,3 +35,6 @@ export PYTHONIOENCODING=UTF-8
 
 # Haskell
 export PATH="$PATH:$HOME/.cabal/bin"
+
+# Vagrant
+VAGRANT_DEFAULT_PROVIDER="virtualbox"

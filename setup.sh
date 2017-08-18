@@ -12,7 +12,6 @@ external_packages=(
     telegram
 )
 
-
 python3_packages=(
     awscli
     bpython
@@ -114,10 +113,17 @@ install_python3_packages() {
     print_success "All Python 3 packages are installed."
 }
 
+apply_dconf_settings() {
+    print_info "Applying dconf settings..."
+    dconf load / < dconf.settings
+    print_success "Settings are successfully applied."
+}
+
 if [[ -f "/etc/redhat-release" ]] && grep -q "Fedora" "/etc/redhat-release"; then
     install_system_deps
     install_fedora_packages
     install_python3_packages
+    apply_dconf_settings
 else
     print_error "Currently only Fedora is supported. :("
 fi

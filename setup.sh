@@ -6,7 +6,6 @@ set -e
 external_packages=(
     deadbeef
     dropbox
-    jdk
     racket
     sublime-text3
     telegram

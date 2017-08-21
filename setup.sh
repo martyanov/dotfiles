@@ -79,6 +79,7 @@ fedora_packages=(
     the_silver_searcher
     tig
     tmux
+    tmux-powerline
     transmission
     tree
     vagrant

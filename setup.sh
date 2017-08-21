@@ -125,11 +125,48 @@ apply_dconf_settings() {
     print_success "Settings are successfully applied."
 }
 
+update_configs() {
+    print_info "Updating configuration files..."
+
+    # Update bash configuration
+    cp bashrc ~/.bashrc
+    cp bash_profile ~/.bash_profile
+    rsync -Ir --exclude=.* bash/ ~/.bash
+
+    # Update git configuration
+    cp gitconfig ~/.gitconfig
+    cp gitignore_global ~/.gitignore_global
+
+    # Update flake8 configuration
+    cp flake8 ~/.flake8
+
+    # Update emacs configuration
+    rsync -Ir --exclude=.* emacs.d/ ~/.emacs.d
+
+    # Update leiningen configuration
+    rsync -Ir --exclude=.* lein/ ~/.lein
+
+    # Update pip configuration
+    rsync -Ir --exclude=.* pip/ ~/.config/pip
+
+    # Update powerline configuration
+    rsync -Ir --exclude=.* powerline/ ~/.config/powerline
+
+    # Update racket configuration
+    cp racketrc ~/.racketrc
+
+    # Update tmux configuration
+    cp tmux.conf ~/.tmux.conf
+
+    print_success "Configuration files are successfully updated."
+}
+
 if [[ -f "/etc/redhat-release" ]] && grep -q "Fedora" "/etc/redhat-release"; then
     install_system_deps
     install_fedora_packages
     install_python3_packages
     apply_dconf_settings
+    update_configs
 else
     print_error "Currently only Fedora is supported. :("
 fi

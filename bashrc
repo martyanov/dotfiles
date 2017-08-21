@@ -25,5 +25,3 @@ if [ -f "$HOME/.local/bin/virtualenvwrapper.sh" ]; then
 else
     echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
-
-export TERM=screen-256color

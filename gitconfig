@@ -9,6 +9,7 @@
         ln = log --pretty=format:'%C(red)%h%C(reset) %C(yellow)%an: %C(reset)%s %C(green)(%cr)' --graph --date=relative -n 10
         remotes = remote -v
         st = status -s
+        sup = submodule update --remote --rebase
         tags = tag -l
         uncommit = reset --soft HEAD^
         unstage = reset HEAD
@@ -24,9 +25,14 @@
         status = auto
         ui = auto
 
+[status]
+        relativePaths = false
+        submoduleSummary = true
+
 [diff]
-	algorithm = patience
-	indentheuristic = true
+        algorithm = patience
+        indentHeuristic = true
+        submodule = log
 
 [credential]
         helper = cache --timeout=3600

@@ -62,6 +62,7 @@ fedora_packages=(
     mercurial
     mpv
     mtr
+    nano
     ncdu
     patch
     patchutils

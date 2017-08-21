@@ -6,6 +6,10 @@
 
 ;;; Code:
 
+;; Init packages
+(package-initialize)
+
+;; Add custom modules to load path
 (add-to-list 'load-path "~/.emacs.d/modules/")
 
 ;; Core requirements

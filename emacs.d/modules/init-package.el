@@ -36,8 +36,6 @@
     paredit
     projectile
     racket-mode
-    rainbow-delimiters
-    rainbow-mode
     smartparens
     smex
     undo-tree

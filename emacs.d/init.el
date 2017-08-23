@@ -18,6 +18,7 @@
 (require 'init-ui)
 (require 'init-clojure)
 (require 'init-go)
+(require 'init-python)
 
 ;; Completely disable backups
 (setq make-backup-files nil)

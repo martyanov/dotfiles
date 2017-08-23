@@ -36,6 +36,7 @@
     paredit
     projectile
     racket-mode
+    rust-mode
     smartparens
     smex
     undo-tree

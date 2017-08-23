@@ -10,16 +10,12 @@
 
 ;; Packages installed by default
 (defvar default-packages
-  '(ace-jump-mode
-    ace-jump-buffer
-    ag
-    auto-virtualenv
+  '(ag
     browse-kill-ring
     cider
     clojure-mode
     clojure-mode-extra-font-locking
     ctags-update
-    dash
     diminish
     direx
     epl

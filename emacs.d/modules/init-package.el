@@ -33,7 +33,6 @@
     magit
     midnight
     monokai-theme
-    paredit
     projectile
     racket-mode
     rust-mode

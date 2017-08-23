@@ -35,13 +35,13 @@
     monokai-theme
     paredit
     projectile
-    pyvenv
     racket-mode
     rainbow-delimiters
     rainbow-mode
     smartparens
     smex
     undo-tree
+    virtualenvwrapper
     yaml-mode
     yasnippet))
 

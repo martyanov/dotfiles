@@ -10,24 +10,20 @@
 
 ;; Packages installed by default
 (defvar default-packages
-  '(ag
-    browse-kill-ring
+  '(browse-kill-ring
     cider
     clojure-mode
     clojure-mode-extra-font-locking
+    counsel
+    counsel-projectile
     ctags-update
     diminish
-    direx
-    epl
     erlang
     expand-region
-    flx
-    flx-ido
     flycheck
     git-gutter
     go-mode
     haskell-mode
-    ido-ubiquitous
     jinja2-mode
     lua-mode
     magit

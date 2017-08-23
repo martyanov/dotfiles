@@ -6,15 +6,13 @@
 
 ;;; Code:
 
-;; Global keybindings for buffer-move
-(global-set-key (kbd "<C-x-up>")     'buf-move-up)
-(global-set-key (kbd "<C-x-down>")   'buf-move-down)
-(global-set-key (kbd "<C-x-left>")   'buf-move-left)
-(global-set-key (kbd "<C-x-right>")  'buf-move-right)
-
-;; Smex keybindings
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; Counsel keybindings
+(global-set-key (kbd "C-s") 'swiper)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
 
 ;; Replace buffer-menu with ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)

@@ -42,10 +42,16 @@
 (global-whitespace-mode t)
 (setq whitespace-line-column 80)
 (setq whitespace-style '(face trailing tabs empty tab-mark))
+(diminish 'whitespace-mode)
 
-;; Ido
-(ido-mode t)
-(flx-ido-mode t)
+;; Ivy
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq ivy-count-format "")
+(setq ivy-re-builders-alist
+      '((t . ivy--regex-ignore-order)))
+(setq ivy-initial-inputs-alist nil)
+(diminish 'ivy-mode)
 
 ;; Increase selected region by semantic units
 (require 'expand-region)
@@ -56,10 +62,10 @@
 
 ;; Enable magit
 (require 'magit)
-(setq magit-last-seen-setup-instructions "1.4.0")
 
 ;; Projectile mode
 (projectile-global-mode)
+(setq projectile-completion-system 'ivy)
 
 ;; Configure Smex
 (setq smex-save-file "~/.emacs.d/.smex-items")
@@ -67,6 +73,7 @@
 
 ;; Configure GitGutter
 (global-git-gutter-mode +1)
+(diminish 'git-gutter-mode)
 
 ;; Python3 by default
 (setq python-shell-interpreter "python3")

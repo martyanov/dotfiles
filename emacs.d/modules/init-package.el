@@ -58,8 +58,6 @@
              '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
-(add-to-list 'package-archives
-             '("marmalade" . "https://marmalade-repo.org/packages/"))
 (package-initialize)
 
 ;; Store package cache in ~/.emacs.d/elpa

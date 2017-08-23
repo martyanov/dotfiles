@@ -22,6 +22,7 @@
     expand-region
     flycheck
     git-gutter
+    git-timemachine
     go-mode
     haskell-mode
     jinja2-mode
@@ -29,6 +30,7 @@
     magit
     monokai-theme
     projectile
+    python-docstring
     racket-mode
     rust-mode
     smartparens

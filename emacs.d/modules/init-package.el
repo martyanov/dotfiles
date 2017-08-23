@@ -10,7 +10,8 @@
 
 ;; Packages installed by default
 (defvar default-packages
-  '(browse-kill-ring
+  '(ag
+    browse-kill-ring
     cider
     clojure-mode
     clojure-mode-extra-font-locking

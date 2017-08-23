@@ -47,9 +47,6 @@
 (ido-mode t)
 (flx-ido-mode t)
 
-;; Kill old buffers
-(require 'midnight)
-
 ;; Increase selected region by semantic units
 (require 'expand-region)
 

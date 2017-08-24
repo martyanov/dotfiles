@@ -7,6 +7,7 @@ external_packages=(
     deadbeef
     dropbox
     racket
+    sshuttle
     sublime-text3
     telegram
 )

@@ -30,6 +30,7 @@ fedora_packages=(
     aspell
     aspell-en
     autojump
+    cargo
     chicken
     chromium
     cloc

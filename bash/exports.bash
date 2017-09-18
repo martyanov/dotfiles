@@ -30,4 +30,4 @@ export PYTHONIOENCODING=UTF-8
 export PATH="$PATH:$HOME/.cabal/bin"
 
 # Vagrant
-VAGRANT_DEFAULT_PROVIDER="virtualbox"
+export VAGRANT_DEFAULT_PROVIDER="virtualbox"

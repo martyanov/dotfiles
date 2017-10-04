@@ -40,5 +40,8 @@
 ;; Tune uniquify buffer name strategy
 (setq uniquify-buffer-name-style 'post-forward)
 
+;; Display line lenghts
+(setq column-number-mode t)
+
 (provide 'init-ui)
 ;;; init-ui.el ends here

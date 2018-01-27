@@ -18,6 +18,7 @@ python3_packages=(
     flake8
     httpie
     saws
+    tmuxp
     virtualenv
     virtualenvwrapper
     youtube-dl

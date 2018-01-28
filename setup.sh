@@ -43,6 +43,7 @@ fedora_packages=(
     dnsmasq-utils
     doxygen
     emacs
+    entr
     erlang
     fabric
     fasd

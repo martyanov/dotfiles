@@ -33,7 +33,6 @@ fedora_packages=(
     autojump
     cargo
     chicken
-    chromium
     cloc
     colordiff
     dconf-editor
@@ -47,6 +46,7 @@ fedora_packages=(
     erlang
     fabric
     fasd
+    firefox
     gettext
     git
     git-extras

@@ -7,9 +7,7 @@ external_packages=(
     deadbeef
     dropbox
     racket
-    sshuttle
     sublime-text3
-    telegram
 )
 
 python3_packages=(
@@ -18,6 +16,7 @@ python3_packages=(
     flake8
     httpie
     saws
+    sshuttle
     tmuxp
     virtualenv
     virtualenvwrapper
@@ -81,6 +80,7 @@ fedora_packages=(
     sloccount
     sqlite
     systemtap
+    telegram-desktop
     the_silver_searcher
     tig
     tilix

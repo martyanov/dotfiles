@@ -60,6 +60,7 @@ fedora_packages=(
     libtiff-devel
     libyaml-devel
     lnav
+    lshw
     lua
     manedit
     meld

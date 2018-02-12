@@ -55,6 +55,7 @@ fedora_packages=(
     golang
     haskell-platform
     htop
+    iproute
     jq
     libpng-devel
     libtiff-devel

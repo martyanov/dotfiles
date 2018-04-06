@@ -12,7 +12,7 @@ lst() {
     tree -a -C -I '.git' --dirsfirst "$@" | less -NR
 }
 
-# Generate random password
+# Generate random password and put it to clipboard
 genpw() {
-    gpg -a --gen-rand 2 24
+    gpg -a --gen-rand 2 24 | xclip -f -r | xclip -r -selection clipboard
 }

@@ -38,6 +38,7 @@
     smex
     undo-tree
     virtualenvwrapper
+    which-key
     yaml-mode
     yasnippet))
 

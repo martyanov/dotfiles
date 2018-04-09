@@ -75,6 +75,9 @@
 (global-git-gutter-mode +1)
 (diminish 'git-gutter-mode)
 
+;; Configure which-key
+(which-key-mode)
+
 ;; Python3 by default
 (setq python-shell-interpreter "python3")
 

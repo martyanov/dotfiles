@@ -33,6 +33,9 @@
 (global-hl-line-mode t)
 (setq require-final-newline t)
 
+;; Disable all scms
+(setq vc-handled-backends nil)
+
 ;; Undo tree mode
 (global-undo-tree-mode t)
 (diminish 'undo-tree-mode)

@@ -86,6 +86,7 @@ fedora_packages=(
     the_silver_searcher
     tig
     tilix
+    tiptop
     tmux
     tmux-powerline
     transmission

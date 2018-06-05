@@ -152,9 +152,6 @@ update_configs() {
     # Update emacs configuration
     rsync -Ir --exclude=.* emacs.d/ ~/.emacs.d
 
-    # Update leiningen configuration
-    rsync -Ir --exclude=.* lein/ ~/.lein
-
     # Update pip configuration
     rsync -Ir --exclude=.* pip/ ~/.config/pip
 

@@ -57,6 +57,7 @@ fedora_packages=(
     htop
     iproute
     jq
+    libcgroup-tools
     libpng-devel
     libtiff-devel
     libyaml-devel

@@ -95,6 +95,7 @@ fedora_packages=(
     tree
     vagrant
     wget
+    xclip
 )
 
 print_info() {

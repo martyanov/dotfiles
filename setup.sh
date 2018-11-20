@@ -46,6 +46,7 @@ fedora_packages=(
     erlang
     fabric
     fasd
+    fio
     firefox
     gettext
     git

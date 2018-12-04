@@ -14,6 +14,7 @@ python3_packages=(
     awscli
     bpython
     flake8
+    haxor-news
     httpie
     saws
     sshuttle

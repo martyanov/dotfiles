@@ -2,14 +2,6 @@
 
 set -e
 
-# Currently just for information
-external_packages=(
-    deadbeef
-    dropbox
-    racket
-    sublime-text3
-)
-
 python3_packages=(
     awscli
     bpython
@@ -37,11 +29,13 @@ fedora_packages=(
     colordiff
     dconf-editor
     deadbeef
+    deadbeef
     devscripts
     diffstat
     dnsmasq
     dnsmasq-utils
     doxygen
+    dropbox
     emacs
     entr
     erlang
@@ -81,6 +75,7 @@ fedora_packages=(
     psutils
     pv
     python3-devel
+    racket
     rust
     scanmem
     sloccount

@@ -52,6 +52,7 @@ fedora_packages=(
     golang
     haskell-platform
     htop
+    idris
     iproute
     jq
     libcgroup-tools

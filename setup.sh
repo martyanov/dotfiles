@@ -68,6 +68,7 @@ fedora_packages=(
     mpv
     mtr
     nano
+    nautilus-dropbox
     ncdu
     patch
     patchutils

@@ -43,6 +43,7 @@ fedora_packages=(
     fasd
     fio
     firefox
+    fzf
     gettext
     git
     git-extras
@@ -78,6 +79,7 @@ fedora_packages=(
     pv
     python3-devel
     racket
+    ripgrep
     rust
     scanmem
     sloccount

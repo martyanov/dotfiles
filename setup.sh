@@ -7,6 +7,7 @@ python3_packages=(
     bpython
     flake8
     haxor-news
+    http-prompt
     httpie
     saws
     sshuttle

@@ -72,6 +72,7 @@ fedora_packages=(
     nano
     nautilus-dropbox
     ncdu
+    nmap
     patch
     patchutils
     powerline

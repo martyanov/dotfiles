@@ -97,6 +97,7 @@ fedora_packages=(
     tmux-powerline
     transmission
     tree
+    unrar
     vagrant
     wget
     xclip

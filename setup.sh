@@ -24,6 +24,7 @@ fedora_packages=(
     aspell
     aspell-en
     autojump
+    bat
     cargo
     chicken
     cloc

@@ -23,6 +23,7 @@ fedora_packages=(
     ansible
     aspell
     aspell-en
+    atop
     autojump
     bat
     cargo
@@ -55,6 +56,8 @@ fedora_packages=(
     haskell-platform
     htop
     idris
+    ioping
+    iotop
     iproute
     jq
     libcgroup-tools
@@ -86,6 +89,8 @@ fedora_packages=(
     scanmem
     sloccount
     sqlite
+    sysbench
+    sysstat
     systemtap
     telegram-desktop
     the_silver_searcher

@@ -31,7 +31,6 @@ fedora_packages=(
     colordiff
     dconf-editor
     deadbeef
-    deadbeef
     devscripts
     diffstat
     dnsmasq

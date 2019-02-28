@@ -22,7 +22,7 @@ hinting='slight'
 
 [org/gnome/shell]
 enabled-extensions=['background-logo@fedorahosted.org', 'TopIcons@phocean.net']
-favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'telegramdesktop.desktop', 'chromium-browser.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'telegramdesktop.desktop', 'firefox.desktop']
 had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/topicons]

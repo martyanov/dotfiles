@@ -5,10 +5,12 @@ set -e
 python3_packages=(
     awscli
     bpython
+    dnsdiag
     flake8
     haxor-news
     http-prompt
     httpie
+    mitmproxy
     saws
     sshuttle
     tmuxp
@@ -38,6 +40,8 @@ fedora_packages=(
     dnsmasq-utils
     doxygen
     dropbox
+    dsniff
+    dstat
     emacs
     entr
     erlang
@@ -55,10 +59,12 @@ fedora_packages=(
     golang
     haskell-platform
     htop
+    httperf
     idris
     ioping
     iotop
     iproute
+    iptraf-ng
     jq
     libcgroup-tools
     libpng-devel
@@ -70,11 +76,14 @@ fedora_packages=(
     manedit
     meld
     mercurial
+    mosh
+    most
     mpv
     mtr
     nano
     nautilus-dropbox
     ncdu
+    nethogs
     nmap
     patch
     patchutils

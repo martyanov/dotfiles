@@ -20,7 +20,8 @@ export HISTCONTROL=ignoredups
 
 # Go
 if [[ -n "$GOPATH" ]]; then
-  export PATH="$PATH:$GOPATH/bin"
+    export PATH="$PATH:$GOPATH/bin"
+    export GO111MODULE="on"
 fi
 
 # Python

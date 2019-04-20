@@ -27,8 +27,5 @@ fi
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONIOENCODING=UTF-8
 
-# Haskell
-export PATH="$PATH:$HOME/.cabal/bin"
-
 # Vagrant
 export VAGRANT_DEFAULT_PROVIDER="virtualbox"

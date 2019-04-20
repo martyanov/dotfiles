@@ -19,8 +19,9 @@ export HISTFILESIZE=65535
 export HISTCONTROL=ignoredups
 
 # Go
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
+if [[ -n "$GOPATH" ]]; then
+  export PATH="$PATH:$GOPATH/bin"
+fi
 
 # Python
 export PYTHONDONTWRITEBYTECODE=1

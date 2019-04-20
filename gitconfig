@@ -3,6 +3,7 @@
         ap = add -p
         amend = commit --amend --reuse-message=HEAD
         branches = branch -a
+        c = commit
         d = diff
         dc = diff --cached
         l = log --pretty=format:'%C(red)%h%C(reset) %C(yellow)%an: %C(reset)%s %C(green)(%cr)' --graph --date=relative

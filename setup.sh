@@ -7,10 +7,8 @@ python3_packages=(
     bpython
     dnsdiag
     flake8
-    haxor-news
     http-prompt
     httpie
-    mitmproxy
     saws
     sshuttle
     tmuxp

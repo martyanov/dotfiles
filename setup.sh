@@ -8,7 +8,6 @@ python3_packages=(
     dnsdiag
     flake8
     http-prompt
-    httpie
     saws
     sshuttle
     tmuxp

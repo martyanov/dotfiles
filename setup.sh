@@ -46,7 +46,6 @@ fedora_packages=(
     entr
     erlang
     fabric
-    fasd
     fio
     firefox
     fzf

@@ -57,3 +57,6 @@
 [user]
         name = Andrey Martyanov
         email = andrey@martyanov.com
+
+[url "git@github.com:"]
+	insteadOf = https://github.com

@@ -81,6 +81,7 @@ fedora_packages=(
     ncdu
     nethogs
     nmap
+    nss-tools
     patch
     patchutils
     powerline

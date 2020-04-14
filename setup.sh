@@ -25,6 +25,7 @@ fedora_packages=(
     atop
     autojump
     bat
+    bcc-tools
     cargo
     chicken
     cloc

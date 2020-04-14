@@ -110,6 +110,7 @@ fedora_packages=(
     tree
     unrar
     vagrant
+    vmtouch
     wget
     xclip
 )

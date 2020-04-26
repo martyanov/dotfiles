@@ -84,6 +84,7 @@ fedora_packages=(
     nmap
     nss-tools
     patch
+    patchelf
     patchutils
     powerline
     powerline-fonts

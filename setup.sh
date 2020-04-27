@@ -3,6 +3,7 @@
 set -e
 
 python3_packages=(
+    auditwheel
     awscli
     bpython
     dnsdiag
@@ -11,6 +12,7 @@ python3_packages=(
     saws
     sshuttle
     tmuxp
+    twine
     virtualenv
     virtualenvwrapper
     youtube-dl

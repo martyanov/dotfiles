@@ -8,8 +8,6 @@ python3_packages=(
     bpython
     dnsdiag
     flake8
-    http-prompt
-    saws
     sshuttle
     tmuxp
     twine

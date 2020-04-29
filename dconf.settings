@@ -21,19 +21,22 @@ antialiasing='rgba'
 hinting='slight'
 
 [org/gnome/shell]
-enabled-extensions=['background-logo@fedorahosted.org', 'TopIcons@phocean.net']
+enabled-extensions=['background-logo@fedorahosted.org', 'TopIcons@phocean.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'telegram-desktop.desktop']
-had-bluetooth-devices-setup=true
+had-bluetooth-devices-setup=false
 
 [org/gnome/shell/extensions/topicons]
 tray-pos='right'
 
 [org/gnome/desktop/interface]
 clock-show-date=true
-gtk-im-module='gtk-im-context-simple'
 clock-show-seconds=true
+clock-show-weekday=true
 enable-animations=false
+gtk-im-module='gtk-im-context-simple'
 gtk-theme='Adwaita'
+show-battery-percentage=true
+text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/gnome/desktop/peripherals/touchpad]
@@ -46,8 +49,13 @@ speed=0.59999999999999998
 show-weekdate=false
 
 [org/gnome/desktop/privacy]
-report-technical-problems=false
+disable-camera=true
+disable-microphone=true
+old-files-age=uint32 1
 remember-recent-files=false
+remove-old-temp-files=true
+remove-old-trash-files=true
+report-technical-problems=false
 
 [org/gnome/desktop/datetime]
 automatic-timezone=false
@@ -62,3 +70,12 @@ sources=[('xkb', 'us'), ('xkb', 'ru')]
 
 [org/gnome/system/location]
 enabled=false
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[org/gnome/desktop/notifications]
+show-in-lock-screen=false
+
+[org/gnome/desktop/media-handling]
+autorun-never=true

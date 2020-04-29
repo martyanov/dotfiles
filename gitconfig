@@ -57,6 +57,7 @@
 [user]
         name = Andrey Martyanov
         email = andrey@martyanov.com
+	signingkey = D364FE36019DCB74
 
 [url "git@github.com:"]
-	insteadOf = https://github.com
+        insteadOf = https://github.com

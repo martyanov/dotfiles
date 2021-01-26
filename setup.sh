@@ -91,6 +91,7 @@ fedora_packages=(
     psutils
     pv
     python3-devel
+    qrencode
     racket
     ripgrep
     rust

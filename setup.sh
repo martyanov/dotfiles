@@ -113,6 +113,7 @@ fedora_packages=(
     vagrant
     vmtouch
     wget
+    wireguard-tools
     xclip
 )
 

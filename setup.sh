@@ -26,7 +26,12 @@ fedora_packages=(
     atop
     autojump
     bat
+    bcc
+    bcc-devel
     bcc-tools
+    bpfmon
+    bpftool
+    bpftrace
     cargo
     chicken
     cloc

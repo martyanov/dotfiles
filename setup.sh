@@ -81,6 +81,7 @@ fedora_packages=(
     nautilus-dropbox
     ncdu
     nethogs
+    ngrep
     nmap
     nss-tools
     patch

@@ -49,11 +49,14 @@ fedora_packages=(
     emacs
     entr
     erlang
+    exa
+    fd-find
     fio
     firefox
     fzf
     gettext
     git
+    git-delta
     git-extras
     gnome-shell-extension-topicons-plus
     gnome-tweak-tool
@@ -102,11 +105,14 @@ fedora_packages=(
     ripgrep
     rust
     scanmem
+    skim
     sloccount
     sqlite
+    starship
     sysbench
     sysstat
     systemtap
+    tealdeer
     telegram-desktop
     the_silver_searcher
     tig
@@ -114,6 +120,7 @@ fedora_packages=(
     tiptop
     tmux
     tmux-powerline
+    tokei
     transmission
     tree
     unrar

@@ -43,7 +43,6 @@ fedora_packages=(
     dnsmasq
     dnsmasq-utils
     doxygen
-    dropbox
     dsniff
     dstat
     emacs
@@ -86,7 +85,6 @@ fedora_packages=(
     mpv
     mtr
     nano
-    nautilus-dropbox
     ncdu
     nethogs
     ngrep

@@ -103,6 +103,7 @@ fedora_packages=(
     ripgrep
     rust
     scanmem
+    seahorse
     skim
     sloccount
     sqlite

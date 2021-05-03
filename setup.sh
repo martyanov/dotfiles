@@ -19,6 +19,7 @@ fedora_packages=(
     aspell-en
     atop
     autojump
+    awscli
     bat
     bcc
     bcc-devel

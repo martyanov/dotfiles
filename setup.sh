@@ -3,10 +3,7 @@
 set -e
 
 python3_packages=(
-    auditwheel
-    awscli
     bpython
-    dnsdiag
     flake8
     httpie
     sshuttle
@@ -153,7 +150,7 @@ install_fedora_packages() {
 
 install_python3_packages() {
     print_info "Installing Python 3 packages..."
-    pip3 install --user --upgrade "${python3_packages[@]}"
+    python3 -m pip install --user --upgrade "${python3_packages[@]}"
     print_success "All Python 3 packages are installed."
 }
 

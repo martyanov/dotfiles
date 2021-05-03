@@ -19,7 +19,6 @@ python3_packages=(
 
 fedora_packages=(
     ShellCheck
-    VirtualBox
     ansible
     aspell
     aspell-en
@@ -101,6 +100,7 @@ fedora_packages=(
     qrencode
     racket
     ripgrep
+    rubygem-rexml
     rust
     scanmem
     seahorse

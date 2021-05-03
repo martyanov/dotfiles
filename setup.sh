@@ -176,9 +176,6 @@ update_configs() {
     cp gitconfig ~/.gitconfig
     cp gitignore_global ~/.gitignore_global
 
-    # Update flake8 configuration
-    cp flake8 ~/.flake8
-
     # Update emacs configuration
     rsync -Ir --exclude=.* emacs.d/ ~/.emacs.d
 

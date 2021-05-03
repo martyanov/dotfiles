@@ -109,7 +109,6 @@ fedora_packages=(
     telegram-desktop
     the_silver_searcher
     tig
-    tilix
     tiptop
     tokei
     transmission

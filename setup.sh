@@ -27,7 +27,6 @@ fedora_packages=(
     bpftool
     bpftrace
     cargo
-    chicken
     cloc
     colordiff
     dconf-editor
@@ -41,7 +40,6 @@ fedora_packages=(
     dstat
     emacs
     entr
-    erlang
     exa
     fd-find
     fio
@@ -71,9 +69,6 @@ fedora_packages=(
     lshw
     lua
     manedit
-    meld
-    mercurial
-    mosh
     most
     mpv
     mtr
@@ -109,7 +104,6 @@ fedora_packages=(
     telegram-desktop
     the_silver_searcher
     tig
-    tiptop
     tokei
     transmission
     tree

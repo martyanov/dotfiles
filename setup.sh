@@ -10,7 +10,6 @@ python3_packages=(
     flake8
     httpie
     sshuttle
-    twine
     virtualenv
     virtualenvwrapper
     youtube-dl

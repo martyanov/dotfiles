@@ -12,9 +12,6 @@
 (defvar default-packages
   '(ag
     browse-kill-ring
-    cider
-    clojure-mode
-    clojure-mode-extra-font-locking
     counsel
     counsel-projectile
     ctags-update
@@ -40,10 +37,6 @@
     which-key
     yaml-mode
     yasnippet))
-
-;; Pin packages to use particular repository
-(add-to-list 'package-pinned-packages
-             '(cider . "melpa-stable") t)
 
 ;; Add melpa package repository and initialize package database
 (add-to-list 'package-archives

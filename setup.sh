@@ -13,6 +13,9 @@ python3_packages=(
 )
 
 fedora_packages=(
+    NetworkManager-tui
+    ShellCheck
+    alacritty
     ansible
     aspell
     aspell-en
@@ -23,6 +26,7 @@ fedora_packages=(
     bcc
     bcc-devel
     bcc-tools
+    bemenu
     bpfmon
     bpftool
     bpftrace
@@ -45,6 +49,7 @@ fedora_packages=(
     fio
     firefox
     fzf
+    gammastep
     gettext
     git
     git-delta
@@ -53,8 +58,10 @@ fedora_packages=(
     gnome-tweak-tool
     gnutls
     golang
+    grim
     htop
     httperf
+    i3status-rs
     idris
     ioping
     iotop
@@ -68,6 +75,7 @@ fedora_packages=(
     lnav
     lshw
     lua
+    mako
     manedit
     most
     mpv
@@ -92,11 +100,13 @@ fedora_packages=(
     rust
     scanmem
     seahorse
-    shellcheck
     skim
     sloccount
+    slurp
     sqlite
     starship
+    sway
+    swaylock
     sysbench
     sysstat
     systemtap
@@ -112,6 +122,7 @@ fedora_packages=(
     vmtouch
     wget
     wireguard-tools
+    wl-clipboard
     xclip
 )
 

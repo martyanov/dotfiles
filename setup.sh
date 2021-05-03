@@ -10,7 +10,6 @@ python3_packages=(
     flake8
     httpie
     sshuttle
-    tmuxp
     twine
     virtualenv
     virtualenvwrapper
@@ -117,8 +116,6 @@ fedora_packages=(
     tig
     tilix
     tiptop
-    tmux
-    tmux-powerline
     tokei
     transmission
     tree
@@ -195,9 +192,6 @@ update_configs() {
 
     # Update racket configuration
     cp racketrc ~/.racketrc
-
-    # Update tmux configuration
-    cp tmux.conf ~/.tmux.conf
 
     print_success "Configuration files are successfully updated."
 }

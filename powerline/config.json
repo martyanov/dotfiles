@@ -11,10 +11,6 @@
                 "select": "select"
             }
         },
-        "tmux": {
-            "colorscheme": "default",
-            "theme": "default"
-        },
         "pdb": {
             "colorscheme": "default",
             "theme": "default"

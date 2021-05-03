@@ -34,9 +34,6 @@
 ;; Use Monokai as a default theme
 (load-theme 'monokai t)
 
-;; Display update isn't paused when input is detected
-(setq redisplay-dont-pause t)
-
 ;; Tune uniquify buffer name strategy
 (setq uniquify-buffer-name-style 'post-forward)
 

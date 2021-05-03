@@ -1,9 +1,0 @@
-*.elc
-.cider-repl-history
-.smex-items
-auto-save-list
-elpa
-eshell
-projectile-bookmarks.eld
-tramp
-url

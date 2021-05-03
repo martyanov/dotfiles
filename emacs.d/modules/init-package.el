@@ -16,13 +16,10 @@
     counsel-projectile
     ctags-update
     diminish
-    erlang
     expand-region
     flycheck
     git-gutter
-    git-timemachine
     go-mode
-    haskell-mode
     jinja2-mode
     lua-mode
     magit
@@ -35,14 +32,11 @@
     undo-tree
     virtualenvwrapper
     which-key
-    yaml-mode
-    yasnippet))
+    yaml-mode))
 
 ;; Add melpa package repository and initialize package database
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (package-initialize)
 
 ;; Store package cache in ~/.emacs.d/elpa

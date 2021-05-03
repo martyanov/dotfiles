@@ -32,7 +32,6 @@
     monokai-theme
     projectile
     python-docstring
-    racket-mode
     rust-mode
     smartparens
     smex

@@ -96,7 +96,6 @@ fedora_packages=(
     pv
     python3-devel
     qrencode
-    racket
     ripgrep
     rubygem-rexml
     rust
@@ -188,9 +187,6 @@ update_configs() {
 
     # Update powerline configuration
     rsync -Ir --exclude=.* powerline/ ~/.config/powerline
-
-    # Update racket configuration
-    cp racketrc ~/.racketrc
 
     print_success "Configuration files are successfully updated."
 }

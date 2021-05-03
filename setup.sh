@@ -59,7 +59,6 @@ fedora_packages=(
     gnome-tweak-tool
     gnutls
     golang
-    haskell-platform
     htop
     httperf
     idris

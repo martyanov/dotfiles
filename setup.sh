@@ -13,7 +13,6 @@ python3_packages=(
 )
 
 fedora_packages=(
-    ShellCheck
     ansible
     aspell
     aspell-en
@@ -98,6 +97,7 @@ fedora_packages=(
     rust
     scanmem
     seahorse
+    shellcheck
     skim
     sloccount
     sqlite

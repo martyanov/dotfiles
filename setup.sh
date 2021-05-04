@@ -48,6 +48,7 @@ fedora_packages=(
     exa
     fd-find
     fio
+    fira-code-fonts
     firefox
     fzf
     gammastep
@@ -92,8 +93,6 @@ fedora_packages=(
     patchelf
     patchutils
     peek
-    powerline
-    powerline-fonts
     psutils
     pv
     python3-devel
@@ -187,8 +186,8 @@ update_configs() {
     # Update pip configuration
     rsync -Ir --exclude=.* pip/ ~/.config/pip
 
-    # Update powerline configuration
-    rsync -Ir --exclude=.* powerline/ ~/.config/powerline
+    # Update starship configuration
+    cp starship.toml ~/.config/starship.toml
 
     print_success "Configuration files are successfully updated."
 }

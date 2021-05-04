@@ -10,13 +10,8 @@ for script_path in "$HOME/.bash/"{aliases,exports,functions}".bash"; do
     fi
 done
 
-# Setup powerline
-if [ -f `which powerline-daemon` ]; then
-    powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-    . /usr/share/powerline/bash/powerline.sh
-fi
+# Setup starship
+eval "$(starship init bash)"
 
 # Activate virtualenvwrapper
 if [ -f "$HOME/.local/bin/virtualenvwrapper.sh" ]; then

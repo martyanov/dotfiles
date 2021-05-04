@@ -89,6 +89,7 @@ fedora_packages=(
     patch
     patchelf
     patchutils
+    peek
     powerline
     powerline-fonts
     psutils

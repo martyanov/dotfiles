@@ -109,6 +109,7 @@ fedora_packages=(
     sqlite
     starship
     sway
+    swayidle
     swaylock
     sysbench
     sysstat

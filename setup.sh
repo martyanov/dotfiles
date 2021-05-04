@@ -77,6 +77,7 @@ fedora_packages=(
     lua
     mako
     manedit
+    mediawriter
     most
     mpv
     mtr

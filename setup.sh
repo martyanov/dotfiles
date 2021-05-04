@@ -37,6 +37,7 @@ fedora_packages=(
     deadbeef
     devscripts
     diffstat
+    dnf-plugin-system-upgrade
     dnsmasq
     dnsmasq-utils
     doxygen

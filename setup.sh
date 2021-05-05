@@ -15,7 +15,6 @@ python3_packages=(
 fedora_packages=(
     NetworkManager-tui
     ShellCheck
-    alacritty
     ansible
     aspell
     aspell-en

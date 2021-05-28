@@ -92,6 +92,7 @@ fedora_packages=(
     patchelf
     patchutils
     peek
+    pinentry
     psutils
     pv
     python3-devel

@@ -3,7 +3,6 @@
 set -e
 
 python3_packages=(
-    bpython
     flake8
     httpie
     sshuttle

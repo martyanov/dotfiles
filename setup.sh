@@ -15,6 +15,7 @@ python_packages=(
 fedora_packages=(
     NetworkManager-tui
     ShellCheck
+    age
     ansible
     aspell
     aspell-en

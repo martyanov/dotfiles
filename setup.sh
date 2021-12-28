@@ -99,7 +99,6 @@ fedora_packages=(
     python3-devel
     qrencode
     ripgrep
-    rubygem-rexml
     rust
     scanmem
     seahorse
@@ -122,7 +121,6 @@ fedora_packages=(
     transmission
     tree
     unrar
-    vagrant
     vmtouch
     wget
     wireguard-tools

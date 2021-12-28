@@ -9,7 +9,7 @@ python3_packages=(
     sshuttle
     virtualenv
     virtualenvwrapper
-    youtube-dl
+    you-get
 )
 
 fedora_packages=(

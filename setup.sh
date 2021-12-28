@@ -124,6 +124,7 @@ fedora_packages=(
     vmtouch
     wget
     wireguard-tools
+    wireshark
     wl-clipboard
     xclip
 )

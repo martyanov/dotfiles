@@ -2,9 +2,10 @@
 
 set -e
 
-python3_packages=(
+python_packages=(
     flake8
     httpie
+    pipx
     sshuttle
     virtualenv
     virtualenvwrapper
@@ -155,10 +156,11 @@ install_fedora_packages() {
     print_success "All Fedora packages are installed."
 }
 
-install_python3_packages() {
-    print_info "Installing Python 3 packages..."
-    python3 -m pip install --user --upgrade "${python3_packages[@]}"
-    print_success "All Python 3 packages are installed."
+install_python_packages() {
+    print_info "Installing Python packages..."
+    python -m pip install --user --upgrade pip wheel
+    python -m pip install --user --upgrade "${python_packages[@]}"
+    print_success "All Python packages are installed."
 }
 
 apply_dconf_settings() {
@@ -194,7 +196,7 @@ update_configs() {
 if [[ -f "/etc/redhat-release" ]] && grep -q "Fedora" "/etc/redhat-release"; then
     install_system_deps
     install_fedora_packages
-    install_python3_packages
+    install_python_packages
     apply_dconf_settings
     update_configs
 else

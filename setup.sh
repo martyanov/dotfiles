@@ -27,6 +27,7 @@ fedora_packages=(
     bcc-devel
     bcc-tools
     bemenu
+    blktrace
     bpfmon
     bpftool
     bpftrace

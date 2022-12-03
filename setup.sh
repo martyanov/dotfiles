@@ -64,7 +64,6 @@ fedora_packages=(
     grim
     htop
     httperf
-    i3status-rust
     idris
     ioping
     iotop

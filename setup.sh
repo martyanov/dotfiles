@@ -16,6 +16,7 @@ fedora_packages=(
     NetworkManager-tui
     ShellCheck
     age
+    android-tools
     ansible
     aspell
     aspell-en

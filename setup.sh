@@ -45,6 +45,7 @@ fedora_packages=(
     doxygen
     dsniff
     dstat
+    easyeffects
     emacs
     entr
     exa

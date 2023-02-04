@@ -6,9 +6,6 @@
 
 ;;; Code:
 
-;; Init packages
-(package-initialize)
-
 ;; Add custom modules to load path
 (add-to-list 'load-path "~/.emacs.d/modules/")
 
@@ -38,6 +35,7 @@
 ;; Undo tree mode
 (global-undo-tree-mode t)
 (diminish 'undo-tree-mode)
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/.undo")))
 
 ;; Whitespace mode configuration
 (require 'whitespace)

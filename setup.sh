@@ -9,7 +9,6 @@ python_packages=(
     sshuttle
     virtualenv
     virtualenvwrapper
-    you-get
 )
 
 fedora_packages=(

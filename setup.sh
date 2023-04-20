@@ -35,7 +35,6 @@ fedora_packages=(
     cloc
     colordiff
     dconf-editor
-    deadbeef
     devscripts
     diffstat
     dnf-plugin-system-upgrade

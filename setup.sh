@@ -46,7 +46,7 @@ fedora_packages=(
     easyeffects
     emacs
     entr
-    exa
+    eza
     fd-find
     fio
     fira-code-fonts

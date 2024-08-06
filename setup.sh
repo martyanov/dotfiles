@@ -32,7 +32,6 @@ fedora_packages=(
     bpftool
     bpftrace
     cargo
-    cloc
     colordiff
     dconf-editor
     devscripts
@@ -103,7 +102,6 @@ fedora_packages=(
     scanmem
     seahorse
     skim
-    sloccount
     slurp
     sqlite
     starship

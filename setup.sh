@@ -73,7 +73,6 @@ fedora_packages=(
     lnav
     lshw
     lua
-    manedit
     mediawriter
     most
     mpv

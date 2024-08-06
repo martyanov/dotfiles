@@ -40,7 +40,6 @@ fedora_packages=(
     dnsmasq-utils
     dsniff
     dstat
-    easyeffects
     emacs
     entr
     eza

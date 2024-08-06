@@ -26,7 +26,6 @@ fedora_packages=(
     bcc
     bcc-devel
     bcc-tools
-    bemenu
     blktrace
     bpfmon
     bpftool
@@ -51,7 +50,6 @@ fedora_packages=(
     fira-code-fonts
     firefox
     fzf
-    gammastep
     gettext
     git
     git-delta
@@ -60,7 +58,6 @@ fedora_packages=(
     gnome-tweak-tool
     gnutls
     golang
-    grim
     htop
     httperf
     idris
@@ -76,7 +73,6 @@ fedora_packages=(
     lnav
     lshw
     lua
-    mako
     manedit
     mediawriter
     most
@@ -102,12 +98,8 @@ fedora_packages=(
     scanmem
     seahorse
     skim
-    slurp
     sqlite
     starship
-    sway
-    swayidle
-    swaylock
     sysbench
     sysstat
     systemtap
@@ -123,7 +115,6 @@ fedora_packages=(
     wget
     wireguard-tools
     wireshark
-    wl-clipboard
     xclip
 )
 

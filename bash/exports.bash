@@ -31,9 +31,6 @@ fi
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONIOENCODING=UTF-8
 
-# Vagrant
-export VAGRANT_DEFAULT_PROVIDER="libvirt"
-
 # GPG
 GPG_TTY=$(tty)
 export GPG_TTY

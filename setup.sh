@@ -38,7 +38,6 @@ fedora_packages=(
     dnf-plugin-system-upgrade
     dnsmasq
     dnsmasq-utils
-    doxygen
     dsniff
     dstat
     easyeffects

@@ -26,6 +26,9 @@
         status = auto
         ui = auto
 
+[init]
+        defaultBranch = master
+
 [status]
         relativePaths = false
         submoduleSummary = true

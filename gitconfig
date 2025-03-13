@@ -1,19 +1,45 @@
 [alias]
         a = add
-        ap = add -p
         amend = commit --amend --reuse-message=HEAD
-        branches = branch -a
+        ap = add -p
+        b = blame
+        bir = blame --ignore-rev
+        br = branch
+        bra = branch -a
+        brd = branch -d
         c = commit
+        cf = commit --fixup
+        cp = cherry-pick
+        cs = commit -S
         d = diff
         dc = diff --cached
+        dr = range-diff
+        gr = grep
         l = log --pretty=format:'%C(red)%h%C(reset) %C(yellow)%an: %C(reset)%s %C(green)(%cr)' --graph --date=relative
         ln = log --pretty=format:'%C(red)%h%C(reset) %C(yellow)%an: %C(reset)%s %C(green)(%cr)' --graph --date=relative -n 10
+        lr = log --pretty=format:'%C(red)%h%C(reset) %C(yellow)%an: %C(reset)%s %C(green)(%cr)' --graph --remerge-diff
+        ls = shortlog
+        lss = shortlog --summary
+        r = restore
+        rb = rebase
+        rbi = rebase -i
         remotes = remote -v
+        rl = reflog
+        rs = restore --staged
+        s = show
+        sb = status -sb
+        sh = stash
+        sl = stash list
+        sp = stash pop
         st = status -s
         sup = submodule update --remote --rebase
+        sw = switch
+        swb = switch -
         tags = tag -l
         uncommit = reset --soft HEAD^
         unstage = reset HEAD
+        wt = worktree
+        wtl = worktree list
 
 [core]
         editor = emacs
@@ -56,6 +82,10 @@
 
 [push]
         default = simple
+
+[rebase]
+        autosquash = true
+        updateRefs = true
 
 [user]
         name = Andrey Martyanov

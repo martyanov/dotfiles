@@ -12,6 +12,9 @@ export TERM=screen-256color
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# Pretty man pages
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+
 # History
 shopt -s histappend
 export HISTSIZE=65535
